@@ -1,0 +1,43 @@
+date  // to display the current date
+who  // to provide details about currently loggined user
+whoami //to display the currently logined user name
+man //to provide manual
+clear // to clear commands from terminal
+pwd  // to show present working directory
+cal   cal 2028  cal 11 2023  // to display calendar
+uptime  //uptime of system
+df  //show disk usage
+du  //show directory space usage
+free  //show memory and swap usage
+passwd / to set/reset password
+ls   ls -a   ls -l   ls -al   //to show content of files and directories
+cat>hello.txt //to create a text file
+cat hello.txt //to view content of file
+cat>hello.txt //to rewrite into a file
+cat>>hello.txt //to append the file
+cat file1.txt file2.txt > file3.txt   //to add content of two files to single
+ctrl +d //to save file content
+touch //to create empty file
+rm //to remove file or directory
+cd     cd ..    //to change directory
+grep pattern filename   //to search for a pattern in a file
+gedit   //to edit the file graphically
+mkdir  //to create a directory
+rmdir  //to del empty dir
+rm -rf dirname  //to del dir w/c is not empty
+cp     //cp source  destination      to copy a file
+mv    //to move the file from one location to another
+ps // currently working process
+top // all running process
+useradd    adduser    //to add new user
+userdel      // to del user
+redhat-config-network      //to open network configuration manager
+ifconfig  //to check network details
+ping id address
+service network restart
+more filename
+head filename  //first 10 lines
+tail filename  //last 10 lines
+
+
+
