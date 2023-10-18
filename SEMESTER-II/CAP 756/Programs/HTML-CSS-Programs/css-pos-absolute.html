@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Absolute Position</title>
+        <style>
+            #container {
+                border:2px solid;
+                background-color: yellow;
+            }
+            aside {
+                position: absolute;
+                border:1px dotted;
+                width: 100px;
+                top:100px;
+                right: 10px;
+            }
+            #ads {
+                width: 200px;
+                height: 300px;
+                position:absolute;
+                border:1px double;
+            }
+            #adsInner {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                border:2px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <p>Container..</p>
+            <div id="ads">
+                ads
+                <div id="adsInner">
+                    adsInner
+                    <aside>Aside</aside>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

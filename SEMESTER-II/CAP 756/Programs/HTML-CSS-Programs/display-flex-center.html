@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Center</title>
+        <style>
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 300px;
+            }
+            .container>div {
+              width: 200px;
+              border:2px solid darkcyan;
+              border-radius: 10px;
+              padding:10px;
+            }
+            input {
+                width:150px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3>User Login</h3>
+                <dl>
+                    <dt>User Name</dt>
+                    <dd><input type="text"></dd>
+                    <dt>Password</dt>
+                    <dd><input type="password"></dd>
+                </dl>
+                <button>Login</button>
+            </div>
+        </div>
+    </body>
+</html>

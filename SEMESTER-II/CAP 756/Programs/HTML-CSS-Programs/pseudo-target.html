@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Target</title>
+        <style>
+            ul {
+                list-style: none;
+                display: flex;
+            }
+            li {
+                margin-left: 50px;
+                border:2px solid darkblue;
+                padding: 10px;
+                width: 200px;
+                text-align: center;
+                border-radius: 10px;
+            }
+            .group {
+                border:2px solid darkgreen;
+                background-color: lightgreen;
+                color:black;
+                margin-top: 20px;
+                padding: 10px;
+            }
+            .group:target {
+                background-color: black;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#js">JavaScript</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div id="html" class="group">
+                <h3>HTML</h3>
+                <p>It is a markup language.</p>
+            </div>
+            <div id="css" class="group">
+                <h3>CSS</h3>
+                <p>It is to define styles</p>
+            </div>
+            <div id="js" class="group">
+                <h3>JavaScript</h3>
+                <p>It is a language.</p>
+            </div>
+        </section>
+    </body>
+</html>

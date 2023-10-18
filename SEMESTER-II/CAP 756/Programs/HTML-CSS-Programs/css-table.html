@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <style>
+            .table{
+                display:table;
+                padding: 20px;
+                width=100%;
+                border: 2px solid red;
+                margin-left: 50px;
+            }
+            .caption{
+                display:table-caption;
+                vertical-align: middle;
+                text-align: center;
+                color:blue;
+                font-size: 20px;
+                font-family: 'Times New Roman', Times, serif;
+                text-shadow: 3px 3px 5px blueviolet;
+            }
+            .table-head{
+                font-weight: bold;
+                background-color: aquamarine;
+                
+            }
+            
+            .table-row{
+                display:table-row;
+            }
+            .table-row:nth-child(even){
+                background-color: azure;
+            }
+            .table-row:nth-child(odd){
+                background-color:rgb(116, 237, 241);
+            }
+            .table-row:hover{
+                background-color: rgb(235, 47, 207);
+            }
+
+            .table-head,.table-cell{
+                display:table-cell;
+                padding:1em;
+                border:1px solid green;
+            }
+            .thead{
+                display:table-header-group;
+                
+                text-align:center;
+                vertical-align: middle; 
+                     
+            }
+            .tbody{
+                display:table-row-group;
+                text-align:center;
+                vertical-align: middle;
+                
+            }
+            .tfoot{
+                display: table-footer-group;
+                vertical-align: middle;
+                color: blueviolet;  
+                text-shadow: 2px 2px 5px burlywood;             
+            }
+           
+        </style>
+    </head>
+    <body>
+        
+        <div class="table">
+            <span class="caption">Table-Caption</span>
+            <div class="thead">
+                
+                <div class="table-row">
+                    <div class="table-head"> Name          </div>
+                    <div class="table-head"> Price         </div>
+                </div>
+            </div>
+
+            <div class="tbody">
+            <div class="table-row">
+                <div class="table-cell">Samsung</div>
+                <div class="table-cell"> &#8377 20,000/- </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Apple </div>
+                <div class="table-cell"> &#8377 50,000/- </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Vivo </div>
+                <div class="table-cell"> &#8377 23,000/- </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Redme </div>
+                <div class="table-cell"> &#8377 18,000/- </div>
+            </div>
+            </div>
+
+            <div class="tfoot">
+                <h3>Contact Us</h3>
+                <h4>Mob:9870000000</h2>
+            </div>
+
+        </div>
+        
+    </body>
+</html>

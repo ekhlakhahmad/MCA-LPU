@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../Fonts/css/all.css">
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </head>
+    <body class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button data-target="#navitems" data-toggle="collapse" type="button" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                Amazon Shopping
+            </a>
+            <div id="navitems" class="collapse navbar-collapse">
+               <ul class="navbar-nav">
+                 <li class="nav-item"><a class="nav-link" href="#"> <span class="fa fa-home"></span> Home</a></li>
+                 <li class="nav-item"><a class="nav-link" href="#"> <span class="fa fa-tv"></span> Electronics</a></li>
+                 <li class="nav-item"><a class="nav-link" href="#"> <span class="fa fa-shoe-prints"></span>Footwear</a></li>
+                 <li class="nav-item"> <a class="nav-link" href="#loginModal" data-toggle="modal"> <span class="fa fa-user"></span> Login </a> </li>
+                 <li class="nav-item"> <a class="nav-link" href="#subscribe" data-toggle="modal"> <span class="fa fa-registered"></span> Subscribe</a> </li>
+               </ul>
+            </div>
+            
+        </nav>
+        <div class="modal fade" id="loginModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>User Login</h3>
+                        <button data-dismiss="modal" class="close">x</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>User Name</label>
+                            <div>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <div>
+                                <input type="password" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">Login</button>
+                        <button data-dismiss="modal" class="btn btn-danger">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="subscribe" class="modal fade bg-dark">
+          <div class="modal-dialog modal-dialog-centered">
+             <div class="modal-content">    
+                <div class="modal-header">
+                    <h3>Subscribe</h3>
+                    <button data-dismiss="modal" class="close">x</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-inline">
+                    <input type="email" placeholder="Subscribe: Your Email" class="form-control"> 
+                    <div class="btn-group">
+                        <button class="btn btn-success">Subscribe</button>
+                        <button data-target="#subscribe" data-toggle="modal" class="btn btn-danger">Cancel</button>
+                    </div>
+                    </div> 
+                </div>
+             </div>
+          </div>    
+        </div>
+    </body>
+</html>

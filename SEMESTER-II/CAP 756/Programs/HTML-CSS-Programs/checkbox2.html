@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CheckBox</title>
+        <style>
+            .container {
+                width: 500px;
+                height: 200px;
+                padding:5px;
+                background-color: lightgray;
+            }
+            .terms+span {
+                color:red;
+            }
+            .terms:checked+span {
+                color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div>
+                <label>Terms of Service</label>
+                <div>
+                    <div class="container">
+                        <p>Depending on how you obtained the Windows software, this is a license agreement between (i) you and the device manufacturer or software installer that distributes the software with your device; or (ii) you and Microsoft Corporation (or, based on where you live or, if a business, where your principal place of business is located, one of its affiliates) if you acquired the software from a retailer. Microsoft is the device manufacturer for devices produced by Microsoft or one of its affiliates, and Microsoft is the retailer if you acquired the software directly from Microsoft. Note that if you are a volume license customer, use of this software is subject to your volume license agreement rather than this agreement.</p>
+                    </div>
+                    <div>
+                        <input class="terms" type="checkbox"> <span>I Accept</span>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Inline</title>
+        <style>
+            form div {
+                display: inline;
+            }
+            ol {
+                list-style: none;
+                margin-left: -40px;
+            }
+            ol li {
+                display: inline;
+            }
+            li:last-child{
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div>
+                <input type="text" placeholder="User Name">
+            </div>
+            <div>
+                <input type="password" placeholder="Password">
+            </div>
+            <div>
+                <button>Login</button>
+            </div>
+        </form>
+        <div>
+            <ol>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ol>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+          .txtName+span {
+              display: none;
+          }
+          .txtName:focus+span {
+              display: inline;
+          }
+          input:focus {
+              border:2px solid darkcyan;
+              box-shadow: 2px 2px 3px darkcyan;
+          }
+          a{
+            text-decoration: none;
+          }
+          a:hover {
+              text-decoration: underline;
+          }
+          a:active {
+              color:red;
+          }
+          a:visited {
+              color:green
+          }
+          a:link {
+              color: yellow;
+          }
+       </style>
+    </head>
+    <body>
+      <div>
+          <label>Name</label>
+          <div>
+             <input class="txtName" type="text">
+             <span>Name 4 Chars</span> 
+          </div>
+      </div>
+      <div>
+          <a href="index1.html">Home</a>
+          <span>|</span>
+          <a href="http://www.flipkart.com">Flipkart</a>
+      </div>
+    </body>
+</html>

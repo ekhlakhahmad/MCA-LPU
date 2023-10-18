@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Modal</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  </head>
+  <body class="container-fluid">
+     <div class="mt-3">
+       <button data-bs-toggle="modal" data-bs-target="#login" class="btn btn-primary">Login</button>
+       <a href="#register" class="btn btn-link" data-bs-toggle="modal">Register</a>
+
+       <!--Login Modal-->
+       <div class="modal fade" id="login">
+          <div class="modal-dialog modal-fullscreen ">
+             <div class="modal-content">
+                <div class="modal-header">
+                    <h3>User Login</h3>
+                    <button data-bs-dismiss="modal" class="btn btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                      <dt>User Name</dt>
+                      <dd>
+                        <input type="text">
+                      </dd>
+                      <dt>Password</dt>
+                      <dd>
+                        <input type="password">
+                      </dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Login</button>
+                    <button data-bs-dismiss="modal" class="btn btn-danger">Cancel</button>
+                </div>
+             </div>
+          </div>
+       </div>
+       <!--Register Modal-->
+       <div class="modal fade" id="register">
+         <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+               <div class="modal-header bg-warning">
+                   <h3>Register New User</h3>
+                   <button data-bs-dismiss="modal" class="btn btn-close"></button>
+               </div>
+               <div class="modal-body">
+                  <dl>
+                    <dt>User Name</dt>
+                    <dd><input type="text"></dd>
+                    <dt>Password</dt>
+                    <dd><input type="text"></dd>
+                    <dt>Mobile</dt>
+                    <dd><input type="text"></dd>
+                    <dt>Email</dt>
+                    <dd><input type="text"></dd>
+                    <dt>Date of Birth</dt>
+                    <dd><input type="text"></dd>
+                    <dt>City</dt>
+                    <dd><input type="text"></dd>
+                    <dt>Postal Code</dt>
+                    <dd><input type="text"></dd>
+                  </dl>
+               </div>
+               <div class="modal-footer">
+                  <button class="btn btn-primary">Register</button>
+               </div>
+            </div>
+         </div>
+       </div>
+     </div>
+     <script src="../node_modules/jquery/dist/jquery.js"></script>
+     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

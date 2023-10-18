@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Canvas experiment</title>
+  <script type="application/javascript">
+    function draw() {
+      const canvas = document.getElementById('canvas');
+      if (canvas.getContext) {
+        const ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = 'rgb(200, 0, 0)';
+        ctx.fillRect(0,0,20,20);
+
+        ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+        ctx.fillRect(40,40,60,60);
+
+        ctx.font="50px Arial";
+        ctx.strokeText("Hello Java Tpoint",50,100);
+
+      }
+    }
+  </script>
+</head>
+
+<body onload="draw();">
+  <canvas id="canvas" width="500" height="300"></canvas>
+</body>
+
+</html>

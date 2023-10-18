@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms in HTML</title>
+        <style>
+            form {
+                display: flex;
+                padding:5px;
+                border:2px solid darkcyan;
+                border-radius: 10px;
+            }
+            form > div {
+                margin-left: 5px;
+            }
+
+            input::placeholder {
+                color:red;
+                font-weight: bold;
+                font-family: Arial;
+            }
+            input:focus {
+                border:none;
+                box-shadow: 2px 3px 4px green;
+            }
+
+
+        </style>
+    </head>
+    <body>
+      <form>
+         <div>
+             Home | About | Contact 
+         </div>
+         <div>
+            <input name="initials" type="text"  value="Mr./Ms." readonly size="6" >
+        </div>
+         <div>
+             <input name="firstName" type="text" placeholder="First Name" autofocus minlength="3" maxlength="10">
+         </div>
+         <div>
+             <input name="lastName" type="text" placeholder="Last Name">
+         </div>
+         <div>
+             <button>Submit</button>
+         </div>
+      </form>
+    </body>
+</html>

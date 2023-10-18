@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Languages</title>
+        <style>
+          * {
+            font-style: italic;
+          }
+          input::placeholder {
+              color:lightgreen;
+          }
+          p::selection {
+              background-color: yellow;
+          }
+        </style>
+    </head>
+    <body>
+        <p>Some content.. select and see..</p>
+        <dl>
+            <dt>Name</dt>
+            <dd><input placeholder="Name 4 chars" type="text"></dd>
+            <dt>Password</dt>
+            <dd><input disabled type="password"></dd>
+            <dt>Mobile</dt>
+            <dd><input required type="text"></dd>
+        </dl>
+    </body>
+</html>

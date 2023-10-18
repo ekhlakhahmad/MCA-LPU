@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+    </head>
+    <body>
+        <!-- frame="box/void/above/below/rhs/lhs" (defined for entire table)
+            rules="All/none/groups/rows/cols" (defined for rows and cols) > -->
+        
+            <table align="center"  frame="below" border="1"  cellpadding="3" cellspacing="10" width="400">
+            <caption>Products Table</caption>
+            <colgroup span="2" style="background-color: yellow;" ></colgroup>
+            <thead align="center">
+                <tr align="center">
+                    <th>Product Id</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Preview</th>
+                </tr>
+            </thead>
+            <tbody align="center" valign="top">
+                <tr>
+                    <td>1</td>
+                    <td>JBL Speaker</td>
+                    <td> &#8377; 5600.55</td>
+                    <td>
+                        <img src="../assets/images/speaker.jpg" width="50" height="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Nike Casuals</td>
+                    <td>&#8377; 3000.44</td>
+                    <td>
+                        <img src="../assets/images/shoe.jpg" width="50" height="50">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td>&copy; copyright 2021</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

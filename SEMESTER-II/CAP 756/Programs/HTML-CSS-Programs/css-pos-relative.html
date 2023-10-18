@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Relative Position</title>
+        
+        <style>
+           .box1, .box2, .box3 {
+               width: 200px ;
+               height: 100px;
+               background-color: yellow;
+               border:1px solid black;
+               margin: 10px;
+           }
+           .box2 {
+               
+               
+           }
+           .boxinner {
+               
+              
+               margin-left:10px;
+               border:2px solid;
+               height: 50px;
+           }
+           .container {
+               
+               border:1px solid;
+           }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        Container Box
+          <div class="box1">
+           Box-1
+          </div>
+          <div class="box2">
+            Box-2
+            <div class="boxinner">
+                Inner Box
+            </div>
+          </div>
+          <div class="box3">
+            Box-3
+          </div>
+      </div>
+    </body>
+</html>

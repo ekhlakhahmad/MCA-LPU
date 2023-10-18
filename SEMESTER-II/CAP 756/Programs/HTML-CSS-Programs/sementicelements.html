@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page to demonstrate sementic elements (Layout Design)</title>
+        <style>
+            header{
+                background-color: maroon;
+                color: white;
+                text-align: center; 
+                font-size: 24px;   
+                border-radius: 30px;
+            }
+            footer{
+                background-color: maroon;
+                color: white;
+                text-align: center; 
+                font-size: 24px;   
+                border-radius: 30px;
+            }
+            section{
+                height: 500px;
+            }
+            main{
+                text-align: center;
+                font-size: 23px;
+            }
+            menu div{
+                width: 200px;
+                background-color:maroon;
+                color:white;
+                text-align: center;
+                font-size: 23px;
+                margin-top: 20px;
+                padding: 10px;
+                border-radius: 30px;
+            }
+            menu div:hover{
+                background-color: black;
+                color: white;
+                cursor: grab;
+            }
+            main span{
+                background-color: yellow;
+                color:red;
+                font-size: 32px;
+                font-weight: bold;
+            }
+            aside{
+                float:right;
+                margin-top: 50px;
+                height: 40px;
+                width: 100px;
+                border:2px solid maroon;
+                font-size: 20px;
+            }
+            article{
+                text-align: center;
+                margin-top: 100px;
+                margin-left: 600px;
+                position: absolute;
+                border:2px dotted maroon;
+                padding: 20px;
+                border-radius: 20px;
+                background-color: lightgreen;
+            }            
+        </style>
+    </head>
+    <body>
+        <header>
+            Amazon Shopping
+        </header>
+        <section>
+            <aside>
+                Ads here...
+            </aside>
+            <article>
+                <div>Dec Sale, 70% off</div>
+                <div>Latest updates</div>
+                <div>News...</div>
+            </article>
+            <nav>
+                <menu>
+                    <div>Home</div>
+                    <div>Electronics</div>
+                    <div>Footwear</div>
+                    <div>Fashion</div>
+                </menu>
+            </nav>
+            <main>
+                Year End Sale. <span>Amazon offers 50% OFF</span>. Ends on DEC - 30.
+                <figure>
+                    Your Image.
+                    <figcaption>Fig:1</figcaption>
+                </figure>
+            </main>
+            <dialog open> 
+                Chat with HR
+            </dialog>
+        </section>
+        <footer>
+            <div>&copy; Copyright 2020 Amazon </div>
+            <div>Electronics | Footwear| Fashion | Support</div>
+        </footer>
+    </body>
+</html>

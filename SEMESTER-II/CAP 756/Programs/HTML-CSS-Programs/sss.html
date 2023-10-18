@@ -1,0 +1,35 @@
+<htm>
+    <head>
+        <style>
+            #myCanvas{border: 10px solid black;}
+        </style>
+        <script>
+            function draw(){
+            
+            // Draw a Rectangle
+
+            var c=document.getElementById('myCanvas');
+            var ctx=c.getContext('2d');
+            ctx.fillStyle='rgb(255,0,0)';
+            ctx.fillRect(10,10, 50,50);
+             
+             //Draw a circle
+            
+            ctx.arc(100,200,50,0,2*Math.PI);
+            ctx.fill();
+
+            // Draw a line
+            ctx.moveTo(200,150);
+            ctx.lineTo(200,200);
+            ctx.stroke();
+
+            }
+            
+        </script>
+    </head>
+    <body onload="draw()">
+        <canvas id="myCanvas" width="400" height="500">
+
+        </canvas>
+    </body>
+</htm>

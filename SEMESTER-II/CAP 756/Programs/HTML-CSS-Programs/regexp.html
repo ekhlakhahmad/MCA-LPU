@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms in HTML</title>
+        <style>
+            .form-login {
+                width: 300px;
+                height: 100px;
+                border:2px solid;
+                padding:20px;
+            }
+        </style>
+    </head>
+    <body align="center">
+      <form id=”frmLogin” class=”form-login” name=”frmLogin” method="GET" >
+        
+        <input pattern="colou?r" placeholder="? 0 or One occurance" type="text" name="txtTest"><br>
+        <input pattern="colou*r" placeholder="* 0 or more occurance"  type="text" name="txtTest"><br>
+        <input pattern="colou+r" placeholder="+ 1 or more occurance"  type="text" name="txtTest"><br>
+        <input pattern="b.y" placeholder=". operator: any single char"  type="text" name="txtTest"><br>
+        <input pattern="\d\d" type="text" name="txtTest"> <br>
+        <input pattern="\d?\d" type="text" name="txtTest"> <br>
+        <input pattern="\D\D" type="text" name="txtTest"><br>
+        <input pattern="\w\w" type="text" name="txtTest"><br>
+        <input pattern="\w\s\w" type="text" name="txtTest"><br>
+        <input pattern="green|red|blue" type="text" name="txtTest"><br>
+        <input pattern="ads" type="text" name="txtTest"><br>
+        <input pattern="(?=.*[A-Z])\w{4,15}" type="text" name="txtTest"><br>
+        <input type="number" min="1.5" max="5.5" step="1.0" name="txtAge" value="1.5" ><br>
+        <input type="date" min="2021-01-28" value="2021-01-29" max="2021-03-20" name="txtDob"><br>
+        <input type="datetime-local"  name="txtDob"><br>
+        <input type="range" min="1000" value="1000" max="10000"  name="txtDob"><br>
+        <input  pattern="[A-Z]{4,10}" type="password" name="txtPwd"><br>
+        <input type="url" name="txtUrl"><br>
+        <input type="email" name="txtEmail"><br>
+        <input type="color" name="txtColor"><br>
+        <input type="file" multiple name="txtPhoto"><br>
+        <input type="file" accept=".jpg" multiple name="txtPhoto"><br>
+
+        <button>Submit</button>
+      </form>
+    </body>
+</html>

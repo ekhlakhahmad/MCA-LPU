@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>State</title>
+        <style>
+           
+            .form-group {
+                margin-top: 20px;
+            }
+            #txtName:optional+div {
+                display: none;
+            }
+            #txtName:required+div { 
+                display: block;
+                color:red;
+            }
+            #txtName:valid+div {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+    
+       <div class="form-group">
+           <label>Name</label>
+           <div>
+               <input  id="txtName" type="text">
+               <div>Name required</div>
+           </div>
+       </div>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+background:burlywood;
+width:350px;
+height:100px;
+margin:10px 0px ;
+padding: 5px;
+border:3px solid brown;
+border-radius: 15px;
+grid-gap: 30px;
+display: flex;
+flex-wrap: wrap;
+
+align-items: flex-start;
+/*align-items: flex-end;to test for "auto" flex-start/flex-end/base-line;*/
+/*flex-direction: column-reverse;
+/*flex-direction: row-reverse;right to left
+flex-direction: column;//to see effect set height of container for output
+flex-direction: column-reverse;*/
+/*You can not handle row and column both;for this you can use
+css grid*/
+/*flex-flow:column wrap;*/
+       }
+.item1{background:orange;}
+.item2{background:red;}
+.item3{background:greenyellow;}
+
+.items{color:white;font-size:10px;
+    font-weight:bold;font-family: verdana;}
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Flex</h1>
+    <div class="container">
+        <div class="items item1">box1</div>
+        <div class="items item2">box2</div>
+        <div class="items item3">box3</div>
+        <div class="items item1">box1</div>
+        <div class="items item2">box2</div>
+        <div class="items item3">box3</div>
+        <div class="items item1">box1</div>
+        <div class="items item2">box2</div>
+        <div class="items item3">box3</div>
+        <div class="items item1">box1</div>
+        <div class="items item2">box2</div>
+        <div class="items item3">box3</div>
+        <div class="items item1">box1</div>
+        <div class="items item2">box2</div>
+        <div class="items item3">box3</div>
+        <div class="items item1">box1</div>
+        <div class="items item2">box2</div>
+        <div class="items item3">box3</div>
+        
+    </div>
+</body>
+</html>

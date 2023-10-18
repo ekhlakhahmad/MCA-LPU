@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Output Element</title>
+    </head>
+    <body>
+        <form oninput="total.value=qty.value*price.value">
+            <dl>
+                <dt>Name</dt>
+                <dd><input type="text"></dd>
+                <dt>Quantity</dt>
+                <dd>
+                    <input type="number" id="qty" name="qty" value="1">
+                </dd>
+                <dt>Price</dt>
+                <dd>
+                    <input type="text" id="price" name="price">
+                </dd>
+                <dt>Total</dt>
+                <dd>
+                    <output name="total"  for="qty price"></output>
+                </dd>
+            </dl>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>State</title>
+        <style>
+            input:read-only {
+                background-color: gainsboro;
+                color: gray;
+            }
+            button:disabled {
+                cursor:not-allowed;
+            }
+            button:enabled {
+                cursor:grab;
+            }
+
+            input[type="checkbox"]+span {
+              color:red;
+           }
+           input[type="checkbox"]:checked+span {
+               color: green;
+           }
+
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>User Name</legend>
+            <div>
+                <input readonly type="text" value="John">
+                <button disabled>Submit</button>
+                <button disabled>Reset</button>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Terms of Service</legend>
+            <textarea rows="4" cols="40">
+               Read our terms and conditions..
+            </textarea>
+            <div>
+                <input type="checkbox"> <span>I Accept</span>
+            </div>
+        </fieldset>
+
+    </body>
+</html>

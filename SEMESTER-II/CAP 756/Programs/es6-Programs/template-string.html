@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script type="text/javascript"  lang="javascript"> 
+            function traditional_string(){
+                firstName="Lovely";
+                middleName="Professional";
+                lastName="University";
+                //Traditional String Concatenation 
+                document.write(firstName + " " + middleName+ " " + lastName);
+            }
+
+            function template_string(){ 
+            //With a template, we can create one string and 
+            //insert the variable values by surrounding them with ${ } using backtick.
+                firstName="Lovely";
+                middleName="Professional";
+                lastName="University";
+                document.write(`${firstName} ${middleName} ${lastName}`);
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Click Print Button to Print Page</h2>
+        <button onclick="traditional_string()">Traditional String</button>
+        <button onclick="template_string()">Template String</button>
+    </body>
+</html>

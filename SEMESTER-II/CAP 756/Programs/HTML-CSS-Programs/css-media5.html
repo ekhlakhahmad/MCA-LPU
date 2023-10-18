@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>ul {
+    list-style-type: none;
+}
+
+ul li a {
+    color: green;
+    text-decoration: none;
+    padding: 3px; 
+    display: block;
+}
+
+@media screen and (max-width: 550px) and (min-width: 500px) {
+    ul li a {
+        padding-left: 30px;
+        background: url("../Images/img_navsprites.gif") left center no-repeat;
+    }
+}
+</style>
+</head>
+<body>
+
+<h1>Resize the browser window to see the effect!</h1>
+
+<ul>
+  <li><a data-email="johndoe@example.com" href="mailto:johndoe@example.com">John Doe</a></li>
+  <li><a data-email="marymoe@example.com" href="mailto:marymoe@example.com">Mary Moe</a></li>
+  <li><a data-email="amandapanda@example.com" href="mailto:amandapanda@example.com">Amanda Panda</a></li>
+</ul>
+
+</body>
+</html>

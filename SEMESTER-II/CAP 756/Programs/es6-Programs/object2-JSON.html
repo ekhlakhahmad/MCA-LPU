@@ -1,0 +1,14 @@
+<script>
+    //JSON (Java Script Object Notation - Collection of objects)
+    function f1(){
+       var products = [
+           {Name: "TV", Price: 45000.44, Cities:['Delhi', 'Hyd']},
+           {Name: "Mobile", Price: 12000.33, Cities: ['Hyd','Chennai']}
+       ];
+       for(var product of products) {
+           document.write(product.Name + "-" + product.Price + "-" + product.Cities.toString() + "<br>");
+       }
+       
+    }
+    f1();
+</script>

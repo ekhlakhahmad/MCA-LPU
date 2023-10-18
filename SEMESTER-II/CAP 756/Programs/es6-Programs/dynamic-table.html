@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic Table</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script>
+             var products = [
+                {Name: "JBL Speaker", Price: 4500.55},
+                {Name: "Earpods", Price: 2500.55},
+                {Name: "Nike Casuals", Price: 6500.55},
+                {Name: "Lee Boot", Price: 1500.55},
+            ];
+            function bodyload(){
+                var tbody= document.getElementById("tbody");
+                for(var item of products)
+                {
+                    var tr = document.createElement("tr");
+                    var tdName = document.createElement("td");
+                    var tdPrice = document.createElement("td");
+                    
+                    tdName.innerHTML = item.Name;
+                    tdPrice.innerHTML = item.Price;
+
+                    tr.appendChild(tdName);
+                    tr.appendChild(tdPrice);
+                    
+                    tbody.appendChild(tr);
+                }
+            }
+        </script>
+    </head>
+    <body onload="bodyload()" class="container-fluid">
+        <h2>Product Details</h2>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </body>
+</html>

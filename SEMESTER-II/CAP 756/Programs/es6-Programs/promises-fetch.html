@@ -1,0 +1,10 @@
+<script>
+    fetch("https://api.randomuser.me/?nat=US&results=1") //GET request to randomuser.me
+    .then(res => res.json())    //If the request is successful, we’ll then convert the response body to JSON. 
+    .then(json => json.results) //we’ll take the JSON data and return the results.
+    .then(console.log)      //Then we’ll send the results to the console.log function to log them to the console. 
+    .catch(console.error); //catch function that invokes a callback if the fetch did not resolve successfully.
+                            //Here, we simply log the error to the console using console.error that 
+                            //occured during fetching of data.
+
+</script>

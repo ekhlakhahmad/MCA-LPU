@@ -1,0 +1,16 @@
+<script>
+    "use strict";
+    function f1(){
+    var x = 10;
+    if(x==10) {
+                var x;  // Shadowing is the process of re-declaring
+                        // same name identifier in the block.
+                x = 30;
+                var y;
+                y = 20;
+    }
+    let x;
+    document.write("X=" + x + "<br>" + "Y=" + y);
+    }
+    f1();
+</script>

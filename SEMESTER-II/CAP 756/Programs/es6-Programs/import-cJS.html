@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Modules</h1>
+
+<p id="demo"></p>
+
+<script type="module" src="./text-helpers-cJS.js">
+const { log, print } = require("./txt-helpers-cJS");
+
+print("printing a message");
+log("logging a message");
+
+
+</script>
+
+</body>
+</html>

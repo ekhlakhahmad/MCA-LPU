@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meter</title>
+        <style>
+            meter {
+                width: 300px;
+                height: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Meter</legend>
+            <dl>
+                <dt>Normal Style</dt>
+                <dd>
+                    <meter></meter>
+                </dd>
+                <dt>Meter 40%</dt>
+                <dd>
+                    <meter min="1" max="100" value="40">
+
+                    </meter>
+                </dd>
+                <dt>Meter 100%</dt>
+                <dd>
+                    <meter min="1" max="100" value="100">
+
+                    </meter>
+                </dd>
+                <dt>Meter Poor</dt>
+                <dd>
+                    <meter min="1" max="100" value="100" low="60" high="80">
+
+                    </meter>
+                </dd>
+                <dt>Meter Weak</dt>
+                <dd>
+                    <meter min="1" max="100" value="100" low="20" high="80"></meter>
+                </dd>
+            </dl>
+        </fieldset>
+    </body>
+</html>

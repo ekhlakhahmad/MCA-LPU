@@ -1,0 +1,48 @@
+
+<html>
+    <head>
+        <title>Speach Media Example</title>
+        <style>
+            @media speech {
+  code {
+    speak-as: iteral-punctuation; 
+    /* Reads all punctuation out loud in iOS  VoiceOver
+    for more details: https://css-tricks.com/lets-talk-speech-css/ */
+  }
+}
+
+code {
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+}
+
+
+article {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #bce7fd;
+  font-family: "Arial";
+}
+
+body,
+html {
+  height: 100%;
+}
+
+        </style>
+    </head>
+    <body>
+        <article>
+            The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the array.
+        </article>
+    </body>
+</html>
+
+

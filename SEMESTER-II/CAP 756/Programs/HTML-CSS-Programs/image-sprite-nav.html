@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of Navigation Menu Based on Image Sprite</title>
+<style>
+    ul.menu {
+        list-style-type: none;
+    }
+    ul.menu li {
+        padding: 5px;
+        font-size: 16px;
+        font-family: "Trebuchet MS", Arial, sans-serif;
+    }
+    ul.menu li a {
+        height: 50px;
+        line-height: 50px;
+        display: inline-block;
+        padding-left: 60px; /* To sift text off the background-image */
+        color: #3E789F;
+        background: url("../Images/mySprite.png") no-repeat; /* As all link share the same background-image */
+    }
+    ul.menu li.firefox a {
+        background-position: 0 0;
+    }
+    ul.menu li.chrome a {
+        background-position: 0 -100px;
+    }
+    ul.menu li.ie a {
+        background-position: 0 -200px;
+    }
+    ul.menu li.safari a {
+        background-position: 0 -300px;
+    }
+    ul.menu li.opera a {
+        background-position: 0 -400px;
+    }
+    ul.menu li.firefox a:hover {
+        background-position: 0 -50px;
+    }
+    ul.menu li.chrome a:hover {
+        background-position: 0 -150px;
+    }
+    ul.menu li.ie a:hover {
+        background-position: 0 -250px;
+    }
+    ul.menu li.safari a:hover {
+        background-position: 0 -350px;
+    }
+    ul.menu li.opera a:hover {
+        background-position: 0 -450px;
+    }
+</style>
+</head>
+<body>
+	<ul class="menu">
+        <li class="firefox"><a href="#">Firefox</a></li>
+        <li class="chrome"><a href="#">Chrome</a></li>
+        <li class="ie"><a href="#">Explorer</a></li>
+        <li class="opera"><a href="#">Opera</a></li>
+        <li class="safari"><a href="#">Safari</a></li>
+    </ul>
+</body>
+</html>

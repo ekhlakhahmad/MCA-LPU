@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+          .txtName+span {
+              display: none;
+          }
+          .txtName:focus+span {
+              display: inline;
+          }
+       </style>
+    </head>
+    <body>
+      <div>
+          <label>Name</label>
+          <div>
+             <input class="txtName" type="text">
+             <span>Name 4 Chars</span> 
+          </div>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>State</title>
+        <style>
+            #txtName:valid+span {
+                display: none;
+            }
+            #txtName:invalid+span {
+                display: inline;
+            }
+            #txtName:valid {
+                border:2px solid green;
+                box-shadow: 2px 2px 3px green;
+            }
+            #txtName:invalid {
+                border:2px solid red;
+                box-shadow: 2px 2px 3px red;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="form-group">
+          <label>User Name</label>
+          <div>
+              <input id="txtName" type="text" minlength="4">
+              <span>Name too short</span>
+          </div>
+       </div>
+    </body>
+</html>

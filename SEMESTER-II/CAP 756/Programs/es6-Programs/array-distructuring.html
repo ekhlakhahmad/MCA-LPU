@@ -1,0 +1,25 @@
+<script>
+    function f1(){
+       var methods = [function(){return "Hello !"}, function(a, b){return a + b}];
+      
+       //Without Destructuring
+       var m1 = methods[0];
+       var m2 = methods[1];
+       document.write(m1() + "<br>");
+       document.write(m2(10,30) + "<br>");
+       
+       // With Destructuring
+       var [x1, x2] = methods;
+       document.write(x1() + "<br>");
+       document.write(x2(10,20));
+
+       //Another example
+       const [firstAnimal] = ["Horse", "Mouse", "Cat"];
+       document.write("<br>"+ firstAnimal);
+
+       //Another Example
+        const [, , thirdAnimal] = ["Horse", "Mouse", "Cat"];
+        document.write("<br>"+ thirdAnimal); //
+    }
+    f1();
+</script>

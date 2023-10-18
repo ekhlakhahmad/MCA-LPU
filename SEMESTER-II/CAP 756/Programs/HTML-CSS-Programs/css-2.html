@@ -1,0 +1,31 @@
+It defines effects when element is disabled.
+
+Ex:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>State</title>
+        <style>
+            input:read-only {
+                background-color: gainsboro;
+                color: gray;
+            }
+            button:disabled {
+                cursor:not-allowed;
+            }
+            button:enabled {
+                cursor:grab;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>User Name</legend>
+            <div>
+                <input readonly type="text" value="John">
+                <button disabled>Submit</button>
+            </div>
+        </fieldset>
+    </body>
+</html>
+

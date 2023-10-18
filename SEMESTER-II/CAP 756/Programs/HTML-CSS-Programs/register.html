@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="styles.css"></link>
+<div id="header">
+Auth Form</div>
+<p class='text-center'>
+  <span>first name</span>
+  <input type="text" id="fn">
+</p>
+<p class='text-center'>
+  <span>User id</span>
+  <input type="text" id="uid">
+</p>
+<p class='text-center'>
+  <span>Password</span>
+  <input type="password" id="pwd">
+</p>
+<p class='text-center'>
+  <span>email</span>
+  <input type="text" id="email">
+</p>
+<p class='text-center'>
+  <input type="button" value="Register" onclick="fnRegister()">
+  <a href="login.html">go to Login</a>
+</p>
+<p class='text-center'>
+  <b id="res"></b>
+</p>
+<div id="footer">
+&copy rights belongs to me
+</div>
+<script>
+  function fnRegister(){
+     //get the references
+	 var fnRef=document.getElementById('fn');
+	 var uidRef=document.getElementById('uid');
+	 var pwdRef=document.getElementById('pwd');
+	 var emailRef=document.getElementById('email');
+	 var resRef=document.getElementById('res');
+	//get values;
+	var firstName=fnRef.value;
+	var uid=uidRef.value;
+	var pwd=pwdRef.value;
+	var email=emailRef.value;
+	//prepare userObject
+	var oUser={
+	   'fn':firstName,
+	   'uid':uid,
+	   'pwd':pwd,
+	   'email':email
+	}
+	//get data from local storeage
+    var sUsers=localStorage.getItem('users');
+	var aUsers=[];
+	if(sUsers==null){
+	  aUsers.push(oUser);
+	  sUsers=JSON.stringify(aUsers);
+	  localStorage.setItem('users',sUsers);
+	}else{
+      aUsers=JSON.parse(sUsers);
+	  //check unique identity
+	 var isUserExist= aUsers.some(function(obj){
+         return obj.uid == oUser.uid
+	  });
+      if(isUserExist){
+	       resRef.innerHTML="U r entered uid is already registered";
+	  }else{
+
+	  aUsers.push(oUser);
+	  sUsers=JSON.stringify(aUsers);
+	  localStorage.setItem('users',sUsers);
+	  resRef.innerHTML="U R Registered Successfully";
+	  }
+	 
+	   
+	}
+	 fnRef.value='';
+	 uidRef.value='';
+	 pwdRef.value='';
+	 emailRef.value='';
+     
+ 
+  }
+</script>

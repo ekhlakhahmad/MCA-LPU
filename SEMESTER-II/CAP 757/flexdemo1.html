@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+background:burlywood;
+width:300px;
+height: 250px;
+margin:10px 0px ;
+padding: 5px;
+border:3px solid brown;
+border-radius: 15px;
+grid-gap: 10px;
+display: flex;
+align-items: flex-baseline;
+
+  }
+.item1{background:orange;flex-basis: 200px;}
+/*the heigh for this item will same in all device as long as there is space*/
+.item2{background:red;}
+.item3{background:greenyellow;}
+.item4{background:blue;}
+
+.items{
+    color:white;
+    font-size:10px;
+    font-weight:bold;
+    font-family: verdana;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    height: 60px;
+   
+   
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Flex</h1>
+    <div class="container">
+        <div class="items item1">box1</div>
+        <div class="items item2">box2</div>
+        <div class="items item3">box3</div>
+        <div class="items item4">box4</div>
+        
+        
+    </div>
+</body>
+</html>

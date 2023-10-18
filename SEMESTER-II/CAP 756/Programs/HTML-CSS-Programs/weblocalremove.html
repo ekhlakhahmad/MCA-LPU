@@ -1,0 +1,34 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>Web Storage API</title>  
+  <style>  
+     body{  
+      color: green;  
+      text-align: center;  
+      font-size: 30px;  
+      margin-top: 30px;  
+      font-style: italic;  
+      }  
+  </style>  
+</head>  
+<body>  
+<button onclick="remove();">Remove item</button>  
+<div id="output"></div>  
+  
+<script>  
+ if(typeof(Storage)!=="undefined") {  
+  localStorage.setItem("name","XYZ");  
+  localStorage.setItem("Country", "India");  
+  document.getElementById('output').innerHTML= "Hii, my name is"+ " "+ localStorage.name +" "+"and i belongs to"+" "+localStorage.Country;  
+   }  
+  else{  
+  alert("Sorry! your browser is not supporting the browser")  
+ }  
+  function remove() {  
+ localStorage.removeItem("hits");  
+   document.getElementById('output').innerHTML= "Hii, my name is"+ " "+ localStorage.name +" "+"and i belongs to"+" "+localStorage.Country;  
+}  
+</script>  
+</body>  
+</html>  

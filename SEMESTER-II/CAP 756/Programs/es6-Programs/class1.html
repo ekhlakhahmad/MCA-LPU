@@ -1,0 +1,19 @@
+<script>
+    class Product
+    {
+      Name = "";
+      Price = 0;
+      Qty = 0;
+      Total(){
+          return this.Qty * this.Price;
+      }
+      Print(){
+          document.write(`Name=${this.Name}<br>Price=${this.Price}<br>Qty=${this.Qty}<br>Total=${this.Total()}`);
+      }
+    }
+    var tv = new Product();
+    tv.Name = "Samsung TV";
+    tv.Price = 34000.44;
+    tv.Qty = 2;
+    tv.Print();
+</script>

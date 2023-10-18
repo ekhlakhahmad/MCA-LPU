@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intra Document Links</title>
+        <style>
+            ul {
+                list-style: none;
+                display: flex;
+                margin-left: -60px;
+            }
+            li {
+                margin-left: 30px;
+                border:2px solid darkcyan;
+                background-color: darkcyan;
+                width: 200px;
+                padding: 5px;
+                text-align: center;
+            }
+            a {
+                color:white;
+                text-decoration: none;
+            }
+            .topic {
+                border:2px solid darkcyan;
+                padding: 10px;
+                background-color: darkcyan;
+                color:white;
+                margin-top: 20px;
+            }
+            .topic:target {
+                background-color: black;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#js">JavaScript</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="html" class="topic">
+          <h2>HTML</h2>
+          <p>It is a markup language..</p>
+        </div>
+        <div id="css" class="topic">
+            <h2>CSS</h2>
+            <p>It defines styles for HTML</p>
+        </div>
+        <div id="js" class="topic">
+            <h2>JavaScript</h2>
+            <p>It is a language.</p>
+        </div>
+    </body>
+</html>

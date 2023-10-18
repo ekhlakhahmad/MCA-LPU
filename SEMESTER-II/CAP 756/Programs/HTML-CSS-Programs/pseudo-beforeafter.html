@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Before After</title>
+        <style>
+            ul {
+                display: flex;
+                list-style: none;
+            }
+            li::before {
+                content: "-->";
+            }
+            li:first-child::before {
+                content: "";
+            }
+        </style>
+    </head>
+    <body>
+        Site Map
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+    </body>
+</html>

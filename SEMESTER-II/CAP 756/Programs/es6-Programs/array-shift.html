@@ -1,0 +1,12 @@
+<script>
+    function f1(){
+        var products = ["TV", "Mobile", "Shoe"];
+        
+        var x= products.shift();
+        document.write("Removed item is:"+ x +"<br><br>");
+        for(var item of products) {
+            document.write(item + "<br>");
+        }
+    }
+    f1();
+</script>

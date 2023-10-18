@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# 2022-09-11 v1.0.0
+
+CACHE:
+appcache.html
+
+NETWORK:
+*
+
+FALLBACK:
+../public/index.html"

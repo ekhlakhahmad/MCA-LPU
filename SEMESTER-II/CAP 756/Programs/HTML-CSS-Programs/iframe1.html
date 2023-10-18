@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Links</title>
+        <style>
+            .container {
+                display: flex;
+                column-count: 2;
+                column-gap: 40px;
+            }
+            iframe {
+                border:none;
+            }
+            img {
+                border:2px solid;
+            }
+            .rightPanel {
+                width: 1000px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+          <div class="leftPanel">
+            <h3>Preview</h3>
+            <div>
+                <a href="../assets/images/earpods.jpg" target="frameBody">
+                    <img src="../assets/images/earpods.jpg" width="50" height="50">
+                </a>
+            </div>
+            <div>
+                <a href="../assets/images/shoe.jpg" target="frameBody">
+                    <img src="../assets/images/shoe.jpg" width="50" height="50">
+                </a>
+            </div>
+          </div>
+          <div class="rightPanel">
+             <iframe name="frameBody" width="100%" height="500">
+
+             </iframe>
+          </div>
+        </div>
+    </body>
+</html>

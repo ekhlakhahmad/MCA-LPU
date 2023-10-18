@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>//var keyword variable is not scoped to the block
+               var topic = "JavaScript";
+               document.write("Before block:", topic)
+               console.log("Before block:", topic);
+               document.write("<br>")
+
+                if (topic) {
+                            let topic = "React";
+                            document.write("Inside block:", topic); // block React
+                            document.write("<br>")
+                }
+                document.write("global:", topic); // global React
+                document.write("<br>")
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

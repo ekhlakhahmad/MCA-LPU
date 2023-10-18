@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+background:burlywood;
+width:300px;
+height: 30px;
+margin:10px 0px ;
+padding: 5px;
+border:3px solid brown;
+border-radius: 15px;
+grid-gap: 10px;
+display: flex;
+align-items: flex-start;
+
+  }
+.item1{background:orange;}
+.item2{background:red;order:-1;}
+.item3{background:greenyellow;order:2;}
+.item4{background:blue;order:1;}
+.item5{background:darkkhaki;order:-2;}
+.item6{background:crimson;}
+
+.items{
+    color:white;
+    font-size:10px;
+    font-weight:bold;
+    font-family: verdana;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Flex</h1>
+    <div class="container">
+        <div class="items item1">box1-0</div>
+        <div class="items item2">box2;-1</div>
+        <div class="items item3">box3-2</div>
+        <div class="items item4">box4-1</div>
+        <div class="items item5">box5;-2</div>
+        <div class="items item6">box6-0</div>
+        
+    </div>
+</body>
+</html>

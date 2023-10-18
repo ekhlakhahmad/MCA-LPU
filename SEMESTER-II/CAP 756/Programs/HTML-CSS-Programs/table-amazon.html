@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table Layout</title>
+        <link rel="stylesheet" href="../fonts/css/all.css">
+        <style>
+            ul {
+                list-style: none;
+            }
+            ul > li {
+                font-size: 20px;
+                color:white;
+                margin-top: 10px;
+            }
+            ol {
+                list-style: none;
+                margin-left: -20px;
+            }
+            ol > li {
+                width: 150px;
+                border:2px solid black;
+                padding:13px;
+                margin-top: 25px;
+                font-size: 20px;
+                background-color: black;
+                color:white;
+                border-radius: 10px;
+            }
+            iframe {
+                border:none;
+            }
+            a {
+                color:white;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <table frame="void" border="1" width="100%" cellspacing="20" cellpadding="10">
+           <tr height="100">
+               <td colspan="3">
+                  <img src="../assets/images/amazon-header.png" width="100%">
+               </td>
+           </tr>
+           <tr height="400">
+               <td width="200">
+                   <ol>
+                       <li>
+                           <a href="../pages/home.html" target="frameBody"> <span class="fa fa-home"></span> Home</a>
+                       </li>
+                       <li>
+                        <a href="../pages/electronics.html" target="frameBody"> <span class="fa fa-tv"></span> Electronics</a>
+                       </li>
+                       <li>
+                        <a href="../Pages/fashion.html" target="frameBody"> <span class="fa fa-tshirt"></span> Fashion</a>
+                        </li>
+                        <li>
+                            <a href="../Pages/footwear.html" target="frameBody"> <span class="fa fa-shoe-prints"></span> Footwear</a>
+                        </li>
+                   </ol>
+               </td>
+               <td>
+                   <iframe src="../pages/home.html" name="frameBody" width="100%" height="400"></iframe>
+               </td>
+               <td width="160">
+                 <img src="../assets/images/amazon-verticle-banner.png" height="400" width="160">
+               </td>
+           </tr>
+           <tr height="50">
+               <td bgcolor="black" colspan="3">
+                  <table align="center">
+                      <tr>
+                          <td>
+                              <ul>
+                                  <li>
+                                      <h2>Get to Know Us</h2>
+                                  </li>
+                                  <li>About Us</li>
+                                  <li>Press Release</li>
+                                  <li>Gift a smile</li>
+                              </ul>
+                          </td>
+                          <td>
+                            <ul>
+                                <li>
+                                    <h2>Get to Know Us</h2>
+                                </li>
+                                <li>About Us</li>
+                                <li>Press Release</li>
+                                <li>Gift a smile</li>
+                            </ul>
+                          </td>
+                          <td>
+                            <ul>
+                                <li>
+                                    <h2>Get to Know Us</h2>
+                                </li>
+                                <li>About Us</li>
+                                <li>Press Release</li>
+                                <li>Gift a smile</li>
+                            </ul>
+                          </td>
+                          <td>
+                            <ul>
+                                <li>
+                                    <h2>Get to Know Us</h2>
+                                </li>
+                                <li>About Us</li>
+                                <li>Press Release</li>
+                                <li>Gift a smile</li>
+                            </ul>
+                          </td>
+                      </tr>
+                  </table>
+               </td>
+           </tr>
+        </table>
+    </body>
+</html>

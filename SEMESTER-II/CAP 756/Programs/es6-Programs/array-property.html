@@ -1,0 +1,11 @@
+<script>
+    function f1(){
+      var categories = [];
+      categories["0"] = "Electronics";
+      categories["1"] = "Footwear";
+      for(var property in categories) {
+          document.write(`${property} : [${typeof property}]<br>`);
+      }
+    }
+    f1();
+</script>

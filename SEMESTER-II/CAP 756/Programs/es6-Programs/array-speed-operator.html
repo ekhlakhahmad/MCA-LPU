@@ -1,0 +1,25 @@
+<script>
+    // speed operator three dots (...)
+/*spread operator allows us to combine the contents of arrays. For example, if we had
+two arrays, we could make a third array that combines the two arrays into one:*/
+const peaks = ["Tallac", "Ralston", "Rose"];
+const canyons = ["Ward", "Blackwood"];
+const tahoe = [...peaks, ...canyons];
+document.write(tahoe.join(", "));
+
+//The spread operator can also be used to get the remaining items in the array:
+const lakes = ["Donner", "Marlette", "Fallen Leaf", "Cascade"];
+const [first, ...others] = lakes;
+document.write(others.join(", "));
+
+//When used in a function, these are called rest parameters.
+function directions(...args) {
+let [start, ...remaining] = args;
+let [finish, ...stops] = remaining.reverse();
+console.log(`drive through ${args.length} towns`);
+console.log(`start in ${start}`);
+console.log(`the destination is ${finish}`);
+console.log(`stopping ${stops.length} times in between`);
+}
+directions("Truckee", "Tahoe City", "Sunnyside", "Homewood", "Tahoma");
+</script>

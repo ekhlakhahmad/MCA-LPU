@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>//With the let keyword, we can scope a variable to any code block. 
+                //Using let protects the value of the global variable.
+               var topic = "JavaScript";
+               document.write("Before block:", topic)
+               document.write("<br>")
+
+                if (topic) {
+                            let topic = "React";
+                            document.write("Inside block:", topic); // block React
+                            document.write("<br>")
+                }
+                document.write("global:", topic); // global React
+                document.write("<br>")
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
