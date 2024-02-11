@@ -1,0 +1,369 @@
+#include <stdio.h>
+ 
+int sum (int a);
+ /*  
+ * C Program to find Sum of Digits of a Number using Recursion
+ */
+int main()
+{
+    int num, result;
+ 
+    printf("Enter the number: ");
+    scanf("%d", &num);
+    result = sum(num);
+    printf("Sum of digits in %d is %d\n", num, result);
+    return 0;
+}
+ 
+int sum (int num)
+{
+    if (num != 0)
+    {
+        return (num % 10 + sum (num / 10));
+    }
+    else
+    {
+       return 0;
+    }
+}
+
+
+-------------------------------------------------------------
+/*  
+ * C program to find the reverse of a number using recursion
+ */
+#include <stdio.h>
+#include <math.h>
+ 
+int rev(int, int);
+ 
+int main()
+{
+    int num, result;
+    int length = 0, temp;
+ 
+    printf("Enter an integer number to reverse: ");
+    scanf("%d", &num);
+    temp = num;
+    while (temp != 0)
+    {
+        length++;
+        temp = temp / 10;
+    }
+    result = rev(num, length);
+    printf("The reverse of %d is %d.\n", num, result);
+    return 0;
+}
+ 
+int rev(int num, int len)
+{
+    if (len == 1)
+    {
+        return num;
+    }
+    else
+    {
+        return (((num % 10) * pow(10, len - 1)) + rev(num / 10, --len));
+    }
+}
+
+----------------------------------------------------------------
+/*  
+ * C Program to Print Binary Equivalent of an Integer using Recursion
+ */
+#include <stdio.h>
+ 
+int binary_conversion(int);
+ 
+int main()
+{
+   int num, bin;
+ 
+   printf("Enter a decimal number: ");
+   scanf("%d", &num);
+   bin = binary_conversion(num);
+   printf("The binary equivalent of %d is %d\n", num, bin);
+}
+ 
+int binary_conversion(int num)
+{
+    if (num == 0)
+    {
+        return 0;
+    }
+    else
+    {
+        return (num % 2) + 10 * binary_conversion(num / 2);
+    }
+}
+
+-----------------------------------------------------------------------------
+/*
+ * C Program to Reverse the String using Recursion
+ */
+#include <stdio.h>
+#include <string.h>
+ 
+void reverse(char [], int, int);
+int main()
+{
+    char str1[20];
+    int size;
+ 
+    printf("Enter a string to reverse: ");
+    scanf("%s", str1);
+    size = strlen(str1);
+    reverse(str1, 0, size - 1);
+    printf("The string after reversing is: %s\n", str1);
+    return 0;
+}
+ 
+void reverse(char str1[], int index, int size)
+{
+    char temp;
+    temp = str1[index];
+    str1[index] = str1[size - index];
+    str1[size - index] = temp;
+    if (index == size / 2)
+    {
+        return;
+    }
+    reverse(str1, index + 1, size);
+}
+
+-----------------------------------------------
+ /*
+     * C Program to find the Biggest Number in an Array of Numbers using 
+     * Recursion
+     */
+ 
+    #include <stdio.h>
+    int large(int[], int, int);
+ 
+    int main()
+    {
+ 
+        int size;
+        int largest;
+        int list[20];
+        int i;
+ 
+        printf("Enter size of the list:");
+        scanf("%d", &size);
+ 
+        printf("Printing the list:\n");
+        for (i = 0; i < size ; i++) 
+        {
+            list[i] = rand() % size;
+            printf("%d \t", list[i]);
+        }
+ 
+        if (size == 0) 
+        {
+            printf("Empty list\n");
+        }
+ 
+        else 
+        {
+            largest = list[0];
+            largest = large(list, size - 1, largest);
+            printf("\nThe largest number in the list is: %d\n", largest);
+        }
+ 
+    }
+ 
+    int large(int list[], int position, int largest)
+    {
+ 
+        if (position == 0)
+            return largest;
+ 
+        if (position > 0) 
+        {
+            if (list[position] > largest)
+            {
+                largest = list[position];
+            }
+            return large(list, position - 1, largest);
+        }
+ 
+    }
+
+------------------------------------------------------
+/*
+ * C Program to search for an element in a list using
+ */
+#include <stdio.h>
+ 
+int search(int [], int, int);
+int main()
+{
+    int size, index, key;
+    int list[20];
+    int count = 0;
+    int i;
+ 
+    printf("Enter the size of the list: ");
+    scanf("%d", &size);
+    index = size;
+    printf("Printing the list:\n");
+    for (i = 0; i < size; i++)
+    {
+        list[i] = rand() % size;
+        printf("%d\t", list[i]);
+    }
+    printf("\nEnter the key to search: ");
+    scanf("%d", &key);
+    while (index > 0)
+    {
+        index = search(list, index - 1, key);
+        /* In an array first position is indexed by 0 */
+        printf("Key found at position: %d\n", index + 1);
+        count++;
+    }
+    if (!count)
+        printf("Key not found.\n");
+    return 0;
+}
+int search(int array[], int size, int key)
+{
+    int location;
+    if (array[size] == key)
+    {
+        return size;
+    }
+    else if (size == -1)
+    {
+        return -1;
+    }
+    else
+    {
+        return (location = search(array, size - 1, key));
+    }
+}
+
+------------------------------------------------------------
+/*
+ * C Program to Perform Binary Search using Recursion
+ */
+ 
+#include <stdio.h>
+ 
+void binary_search(int [], int, int, int);
+void bubble_sort(int [], int);
+ 
+int main()
+{
+    int key, size, i;
+    int list[25];
+ 
+    printf("Enter size of a list: ");
+    scanf("%d", &size);
+    printf("Enter elements\n");
+    for(i = 0; i < size; i++)
+    {
+        scanf("%d",&list[i]);
+    }
+    bubble_sort(list, size);
+    printf("\n");
+    printf("Enter key to search\n");
+    scanf("%d", &key);
+    binary_search(list, 0, size, key);
+ 
+}
+ 
+void bubble_sort(int list[], int size)
+{
+    int temp, i, j;
+    for (i = 0; i < size; i++)
+    {
+        for (j = i; j < size; j++)
+        {
+            if (list[i] > list[j])
+            {
+                temp = list[i];
+                list[i] = list[j];
+                list[j] = temp;
+            }
+        }
+    }
+}
+ 
+void binary_search(int list[], int lo, int hi, int key)
+{
+    int mid;
+ 
+    if (lo > hi)
+    {
+        printf("Key not found\n");
+        return;
+    }
+    mid = (lo + hi) / 2;
+    if (list[mid] == key)
+    {
+        printf("Key found\n");
+    }
+    else if (list[mid] > key)
+    {
+        binary_search(list, lo, mid - 1, key);
+    }
+    else if (list[mid] < key)
+    {
+        binary_search(list, mid + 1, hi, key);
+    }
+}
+
+----------------------------------------------
+/* C Program to implement Linear Search Algorithm recursively */
+ 
+#include <stdio.h>
+int RecursiveLS(int arr[], int value, int index, int n)
+{
+    int pos = 0;
+ 
+    if(index >= n)
+    {
+        return 0;
+    }
+ 
+    else if (arr[index] == value)
+    {
+        pos = index + 1;
+        return pos;
+    }
+ 
+    else
+    {
+        return RecursiveLS(arr, value, index+1, n);
+    }
+    return pos;
+}
+ 
+int main()
+{
+    int n, value, pos, m = 0, arr[100];
+    printf("Enter the total elements in the array  ");
+    scanf("%d", &n);
+ 
+    printf("Enter the array elements\n");
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+ 
+    printf("Enter the element to search  ");
+    scanf("%d", &value);
+ 
+    pos =  RecursiveLS(arr, value, 0, n);
+    if (pos != 0)
+    {
+        printf("Element found at pos %d ", pos);
+    }
+    else
+    {
+        printf("Element not found");
+    }
+    return 0;
+}
+
+---------------------------------------------------------------------

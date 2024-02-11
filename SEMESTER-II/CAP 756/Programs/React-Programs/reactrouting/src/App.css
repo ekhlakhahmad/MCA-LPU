@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+nav {
+  height: 50px;
+  max-width: 100%;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.list > ul {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+
+.list > ul > li {
+  list-style: none;
+  display: block;
+}
+
+.list > ul > li > a {
+  text-decoration: none;
+  padding: 20px 40px;
+  color: #faf6f6;
+  font-weight: bold;
+}
+
+.list > ul > li :hover {
+  background-color: rgba(17, 62, 183, 0.69);
+}
+
+.sing-container {
+}
+
+.signin {
+  border: 1px solid black;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+  min-height: 400px;
+  margin-top: 50px;
+}
+
+form > label {
+  font-size: 20px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.signin > input {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+form > button {
+  padding: 10px 20px;
+  background-color: chartreuse;
+  border-radius: 5px;
+}
+form > button:hover {
+  background-color: rgb(200, 238, 162);
+}
+
+.table-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+table{
+  border: 1px solid black;
+}
+tr,
+td,
+th {
+  border: 1px solid black;
+  padding: 10px;
+  border-collapse: collapse;
+}

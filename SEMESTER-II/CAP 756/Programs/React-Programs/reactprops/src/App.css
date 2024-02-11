@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+}
+
+.example-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
